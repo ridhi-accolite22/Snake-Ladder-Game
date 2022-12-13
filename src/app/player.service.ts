@@ -202,8 +202,241 @@ export class PlayerService{
     {
       "curr_pos": 50,
       "take_to": 50
-    }
+    },
+    {
+      "curr_pos": 51,
+      "take_to": 51
+    },
+    {
+      "curr_pos": 52,
+      "take_to": 52
+    },
+    {
+      "curr_pos": 53,
+      "take_to": 53
+    },
+    {
+      "curr_pos": 54,
+      "take_to": 54
+    },
+    {
+      "curr_pos": 55,
+      "take_to": 20
+    },
+    {
+      "curr_pos": 56,
+      "take_to": 56
+    },
+    {
+      "curr_pos": 57,
+      "take_to": 57
+    },
+    {
+      "curr_pos": 58,
+      "take_to": 58
+    },
+    {
+      "curr_pos": 59,
+      "take_to": 59
+    },
+    {
+      "curr_pos": 60,
+      "take_to": 60
+    },
+    {
+      "curr_pos": 61,
+      "take_to": 61
+    },
+    {
+      "curr_pos": 62,
+      "take_to": 47
+    },
+    {
+      "curr_pos": 63,
+      "take_to": 63
+    },
+    {
+      "curr_pos": 64,
+      "take_to": 64
+    },
+    {
+      "curr_pos": 65,
+      "take_to": 65
+    },
+    {
+      "curr_pos": 66,
+      "take_to": 90
+    },
+    {
+      "curr_pos": 67,
+      "take_to": 67
+    
+    },
+    {
+      "curr_pos": 68,
+      "take_to": 68
+    
+    },
+    {
+      "curr_pos": 69,
+      "take_to": 69
+    
+    },
+    {
+      "curr_pos": 70,
+      "take_to": 70
+    
+    },
+    {
+      "curr_pos": 71,
+      "take_to": 50
+    
+    },
+    {
+      "curr_pos": 72,
+      "take_to": 72
+    
+    },
+    {
+      "curr_pos": 73,
+      "take_to": 73
+    
+    },
+    {
+      "curr_pos": 74,
+      "take_to": 74
+    
+    },
+    {
+      "curr_pos": 75,
+      "take_to": 75
+    
+    },
+    {
+      "curr_pos": 76,
+      "take_to": 76
+    
+    },
+    {
+      "curr_pos": 77,
+      "take_to": 77
+    
+    },
+    {
+      "curr_pos": 78,
+      "take_to": 78
+    
+    },
+    {
+      "curr_pos": 79,
+      "take_to": 79
+    
+    },
+    {
+      "curr_pos": 80,
+      "take_to": 95
+    
+    },
+    {
+      "curr_pos": 82,
+      "take_to": 70
+    
+    },
+    {
+      "curr_pos": 83,
+      "take_to": 83
+    
+    },
+    {
+      "curr_pos": 84,
+      "take_to": 84
+    
+    },
+    {
+      "curr_pos": 85,
+      "take_to": 85
+    
+    },
+    {
+      "curr_pos": 86,
+      "take_to": 86
+    
+    },
+    {
+      "curr_pos": 87,
+      "take_to": 87
+    
+    },
+    {
+      "curr_pos": 88,
+      "take_to": 88
+    
+    },
+    {
+      "curr_pos": 89,
+      "take_to": 89
+    
+    },
+    {
+      "curr_pos": 90,
+      "take_to": 90
+    
+    },
+    {
+      "curr_pos": 91,
+      "take_to": 91
+    
+    },
+    {
+      "curr_pos": 92,
+      "take_to": 92
+    
+    },
+    {
+      "curr_pos": 93,
+      "take_to": 93
+    
+    },
+    {
+      "curr_pos": 94,
+      "take_to": 94
+    
+    },
+    {
+      "curr_pos": 95,
+      "take_to": 95
+    
+    },
+    {
+      "curr_pos": 96,
+      "take_to": 96
+    
+    },
+    {
+      "curr_pos": 97,
+      "take_to": 97
+    
+    },
+    {
+      "curr_pos": 98,
+      "take_to": 98
+    
+    },
+    {
+      "curr_pos": 99,
+      "take_to": 99
+    
+    },
+    {
+      "curr_pos": 100,
+      "take_to": 100
+    
+    },
+    
+
   ];
+
+
 
 
    
@@ -214,18 +447,20 @@ export class PlayerService{
   }
 
 
-  public z1: number = 0;
-  public z2: number = 0;
+  public position1: number = 0;
+  public position2: number = 0;
 
   checkPos(pos:number): number{
+    
      
-   this.z1  = this.board1[pos].curr_pos;
-    this.z2= this.board1[pos].take_to;
-    if(this.z1!=this.z2){
-    return this.z2;
+   this.position1  = this.board1[pos].curr_pos;
+    this.position2= this.board1[pos].take_to;
+   
+    if(this.position1!=this.position2){
+    return this.position2;
   }
   else{
-    return this.z1;
+    return this.position1;
   }
     
   }

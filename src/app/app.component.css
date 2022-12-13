@@ -1,0 +1,40 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10,auto);
+    /* background-color: #2196F3; */
+    /* padding-left: 22%; */
+    /* width:25px; */
+    /* float: center;
+    position: center; */
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+ 
+  }
+.snake{
+  background-color: rgb(191, 23, 23);
+}
+.player1{
+  background-color: green;
+}
+#myTable{
+    background-color: powderblue;
+    /* max-height: 50%; */
+  }
+.player2{
+  background-color: rgb(200, 255, 0);
+}
+.ladder{
+    background-color: rgb(57, 136, 240);
+  }
+  .heading{
+    font-size: 45px;
+    font-family:'Kenia';
+    padding-left: 10px;
+    margin-left:35% ;
+
+  }
